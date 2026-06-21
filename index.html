@@ -50,110 +50,162 @@
 </head>
 <body class="bg-white text-gray-800 overflow-x-hidden">
 
-  <!-- NAVBAR -->
-  <nav class="fixed top-0 left-0 right-0 z-50 bg-white/90 backdrop-blur-sm shadow-sm">
+<!-- NAVBAR POKEDEX -->
+  <nav class="fixed top-0 left-0 right-0 z-50 bg-red-600/95 backdrop-blur-md shadow-lg border-b-4 border-red-800">
     <div class="max-w-6xl mx-auto px-6 py-3 flex items-center justify-between">
-      <div class="flex items-center gap-2">
-        <!-- Pokeball SVG icon -->
-        <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <circle cx="18" cy="18" r="17" fill="white" stroke="#000" stroke-width="2"/>
-          <path d="M1 18 Q18 18 35 18" stroke="#000" stroke-width="2"/>
-          <path d="M1 18 A17 17 0 0 1 35 18" fill="#EF4444"/>
-          <circle cx="18" cy="18" r="5" fill="white" stroke="#000" stroke-width="2"/>
-          <circle cx="18" cy="18" r="2.5" fill="#fff" stroke="#000" stroke-width="1.5"/>
-        </svg>
-        <span class="text-xl font-black text-pokered tracking-tight">Poke<span class="text-pokeblue">Aprender</span></span>
+
+      <!-- Logo -->
+      <div class="flex items-center gap-3">
+        <div class="w-11 h-11 rounded-full bg-white border-4 border-black flex items-center justify-center shadow-md">
+          <div class="w-5 h-5 rounded-full bg-blue-400 border-2 border-black animate-pulse"></div>
+        </div>
+
+        <span class="text-2xl font-black text-white tracking-tight drop-shadow">
+          Poke<span class="text-yellow-300">Aprender</span>
+        </span>
       </div>
-      <div class="hidden md:flex items-center gap-8 text-sm font-bold text-gray-600">
-        <a href="#como-funciona" class="hover:text-pokered transition-colors">¿Cómo funciona?</a>
-        <a href="#tipos" class="hover:text-pokered transition-colors">Tipos</a>
-        <a href="#para-quien" class="hover:text-pokered transition-colors">¿Para quién?</a>
-        <a href="#testimonios" class="hover:text-pokered transition-colors">Testimonios</a>
+
+      <!-- Links -->
+      <div class="hidden md:flex items-center gap-4 text-sm font-black">
+        <a href="#como-funciona" class="bg-white/15 text-white px-4 py-2 rounded-full border border-white/30 hover:bg-white hover:text-red-600 transition-all">
+          ¿Cómo funciona?
+        </a>
+        <a href="#tipos" class="bg-white/15 text-white px-4 py-2 rounded-full border border-white/30 hover:bg-white hover:text-red-600 transition-all">
+          Tipos
+        </a>
+        <a href="#para-quien" class="bg-white/15 text-white px-4 py-2 rounded-full border border-white/30 hover:bg-white hover:text-red-600 transition-all">
+          ¿Para quién?
+        </a>
       </div>
-      <a href="#registro" class="bg-pokered text-white px-5 py-2 rounded-full font-bold text-sm hover:bg-red-600 transition-colors shadow-md">
-        ¡Empieza gratis!
+
+      <!-- CTA -->
+      <a href="#registro" class="bg-yellow-300 text-gray-900 px-5 py-2 rounded-full font-black text-sm hover:bg-yellow-200 transition-all shadow-md hover:scale-105">
+        ¡Empieza ahora!
       </a>
     </div>
   </nav>
 
-  <!-- HERO -->
-  <section class="min-h-screen flex items-center pt-20 relative overflow-hidden bg-gradient-to-br from-yellow-50 via-white to-blue-50">
-    <!-- decorative blobs -->
-    <div class="absolute top-20 right-0 w-96 h-96 rounded-full opacity-30 hero-blob"></div>
-    <div class="absolute bottom-10 left-0 w-72 h-72 rounded-full opacity-20" style="background: radial-gradient(circle, #93c5fd, transparent 70%)"></div>
 
-    <div class="max-w-6xl mx-auto px-6 py-20 grid md:grid-cols-2 gap-12 items-center relative z-10">
-      <div>
-        <span class="inline-block bg-yellow-100 text-yellow-700 font-bold text-sm px-4 py-1.5 rounded-full mb-4">
-          🎮 Aprendizaje para niños
-        </span>
-        <h1 class="text-5xl md:text-6xl font-black leading-tight mb-6">
-          Aprende<br/>
-          <span class="text-pokered">Pokémon</span><br/>
-          <span class="text-pokeblue">sin aburrirte</span>
+<!-- HERO POKEDEX -->
+  <section class="min-h-screen pt-24 flex items-center relative overflow-hidden bg-gradient-to-br from-red-50 via-white to-blue-100">
+
+    <!-- Fondo decorativo -->
+    <div class="absolute top-24 left-10 w-32 h-32 bg-red-300/30 rounded-full blur-3xl"></div>
+    <div class="absolute bottom-20 right-10 w-44 h-44 bg-blue-300/30 rounded-full blur-3xl"></div>
+
+    <div class="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center relative">
+
+      <!-- TEXTO -->
+      <div class="space-y-6">
+
+        <!-- Badge -->
+        <div class="inline-flex items-center gap-3 bg-red-600 text-white border-4 border-red-800 rounded-2xl px-5 py-3 shadow-lg rotate-[-1deg]">
+          <div class="flex gap-2">
+            <span class="w-3 h-3 rounded-full bg-blue-300 animate-pulse"></span>
+            <span class="w-3 h-3 rounded-full bg-yellow-300"></span>
+            <span class="w-3 h-3 rounded-full bg-green-300"></span>
+          </div>
+          <span class="font-black text-sm tracking-wide">
+            Pokédex interactiva online
+          </span>
+        </div>
+
+        <!-- Title -->
+        <h1 class="text-5xl md:text-6xl font-black leading-tight text-gray-900">
+          Explora Pokémon<br>
+          como una verdadera<br>
+          <span class="text-red-600 drop-shadow-sm">Pokédex</span>
         </h1>
-        <p class="text-lg text-gray-600 mb-8 leading-relaxed max-w-md">
-          PokeAprender es la plataforma educativa que enseña tipos, debilidades y estrategias Pokémon de forma visual, divertida y en español — perfecta para niños de 6 a 14 años.
+
+        <p class="text-lg text-gray-600 leading-relaxed max-w-md">
+          Busca, analiza y descubre Pokémon con una interfaz visual inspirada en la Pokédex clásica. Consulta tipos, habilidades, estadísticas y datos obtenidos desde PokéAPI.
         </p>
+
+        <!-- Buttons -->
         <div class="flex flex-wrap gap-4">
-          <a href="#registro" class="bg-pokered text-white px-8 py-4 rounded-full font-black text-lg hover:bg-red-600 transition-all shadow-lg hover:shadow-xl hover:-translate-y-1 inline-block">
-            ¡Jugar y Aprender! 🚀
+          <a href="#pokedex" class="bg-red-600 text-white px-8 py-4 rounded-full font-black text-lg hover:bg-red-500 transition-all shadow-lg hover:shadow-xl hover:-translate-y-1">
+            Abrir Pokédex
           </a>
-          <a href="#como-funciona" class="border-2 border-gray-300 text-gray-700 px-8 py-4 rounded-full font-bold text-lg hover:border-pokered hover:text-pokered transition-all inline-block">
-            Ver demo
+
+          <a href="#pokemon" class="bg-white border-4 border-gray-900 text-gray-900 px-8 py-4 rounded-full font-black text-lg hover:bg-yellow-300 transition-all hover:-translate-y-1">
+            Ver Pokémon
           </a>
         </div>
-        <div class="flex items-center gap-6 mt-10">
-          <div class="text-center">
-            <div class="text-2xl font-black text-pokered">+5,000</div>
-            <div class="text-xs text-gray-500 font-semibold">Niños aprendiendo</div>
+
+        <!-- Stats -->
+        <div class="flex flex-wrap items-center gap-4 pt-4">
+          <div class="bg-white border-4 border-gray-900 rounded-2xl px-5 py-3 shadow-md hover:-translate-y-1 transition-all">
+            <div class="text-2xl font-black text-blue-600">18</div>
+            <div class="text-xs text-gray-500 font-bold">Tipos Pokémon</div>
           </div>
-          <div class="w-px h-10 bg-gray-200"></div>
-          <div class="text-center">
-            <div class="text-2xl font-black text-pokeblue">18</div>
-            <div class="text-xs text-gray-500 font-semibold">Tipos Pokémon</div>
+
+          <div class="bg-white border-4 border-gray-900 rounded-2xl px-5 py-3 shadow-md hover:-translate-y-1 transition-all">
+            <div class="text-2xl font-black text-red-600">API</div>
+            <div class="text-xs text-gray-500 font-bold">Datos reales</div>
           </div>
-          <div class="w-px h-10 bg-gray-200"></div>
-          <div class="text-center">
-            <div class="text-2xl font-black text-pokeyellow">100%</div>
-            <div class="text-xs text-gray-500 font-semibold">En español</div>
+
+          <div class="bg-white border-4 border-gray-900 rounded-2xl px-5 py-3 shadow-md hover:-translate-y-1 transition-all">
+            <div class="text-2xl font-black text-yellow-500">ES</div>
+            <div class="text-xs text-gray-500 font-bold">Interfaz visual</div>
           </div>
         </div>
       </div>
 
-      <!-- Hero illustration: floating pokemon cards -->
-      <div class="flex justify-center relative">
-        <div class="relative w-80 h-80">
-          <!-- Card 1 -->
-          <div class="absolute top-0 left-4 w-44 bg-gradient-to-b from-yellow-300 to-yellow-500 rounded-2xl p-4 shadow-2xl animate-float border-4 border-yellow-200">
-            <div class="bg-yellow-100 rounded-xl p-3 mb-2 text-center">
-              <div class="text-6xl">⚡</div>
-            </div>
-            <div class="text-center">
-              <p class="font-black text-yellow-900 text-sm">Pikachu</p>
-              <span class="bg-yellow-800 text-yellow-100 text-xs font-bold px-2 py-0.5 rounded-full">Eléctrico</span>
-            </div>
-          </div>
-          <!-- Card 2 -->
-          <div class="absolute bottom-0 right-0 w-44 bg-gradient-to-b from-blue-400 to-blue-600 rounded-2xl p-4 shadow-2xl border-4 border-blue-200" style="animation: float 3s ease-in-out infinite 1s;">
-            <div class="bg-blue-100 rounded-xl p-3 mb-2 text-center">
-              <div class="text-6xl">💧</div>
-            </div>
-            <div class="text-center">
-              <p class="font-black text-blue-900 text-sm">Squirtle</p>
-              <span class="bg-blue-800 text-blue-100 text-xs font-bold px-2 py-0.5 rounded-full">Agua</span>
+
+      <!-- POKEDEX VISUAL -->
+      <div class="flex justify-center">
+
+        <div class="relative bg-red-600 border-[6px] border-red-900 rounded-[2rem] shadow-2xl p-5 w-full max-w-md hover:scale-[1.02] transition-all duration-300">
+
+          <!-- Luces superiores -->
+          <div class="flex items-center gap-3 mb-4">
+            <div id="mainLight" class="w-14 h-14 rounded-full bg-blue-300 border-4 border-white shadow-lg animate-pulse"></div>
+
+            <div class="flex gap-2">
+              <div class="w-5 h-5 rounded-full bg-red-300 border-2 border-red-900"></div>
+              <div class="w-5 h-5 rounded-full bg-yellow-300 border-2 border-red-900"></div>
+              <div class="w-5 h-5 rounded-full bg-green-300 border-2 border-red-900"></div>
             </div>
           </div>
-          <!-- Card 3 -->
-          <div class="absolute bottom-10 left-0 w-40 bg-gradient-to-b from-green-400 to-green-600 rounded-2xl p-4 shadow-xl border-4 border-green-200" style="animation: float 3s ease-in-out infinite 0.5s;">
-            <div class="bg-green-100 rounded-xl p-3 mb-2 text-center">
-              <div class="text-5xl">🌿</div>
-            </div>
-            <div class="text-center">
-              <p class="font-black text-green-900 text-sm">Bulbasaur</p>
-              <span class="bg-green-800 text-green-100 text-xs font-bold px-2 py-0.5 rounded-full">Planta</span>
+
+          <!-- Pantalla -->
+          <div class="bg-gray-200 border-[5px] border-gray-900 rounded-3xl p-4 shadow-inner">
+            <div class="relative bg-gradient-to-br from-green-200 to-green-400 border-4 border-gray-900 rounded-2xl min-h-[330px] overflow-hidden flex items-end justify-center">
+
+              <!-- Scan line -->
+              <div id="scanLine" class="absolute top-0 left-0 w-full h-2 bg-white/60 shadow-[0_0_20px_white] opacity-0"></div>
+
+              <!-- Ash image -->
+              <img
+                src="./img/ASH.png"
+                alt="Ash Pokémon"
+                class="relative z-10 w-72 drop-shadow-2xl hover:scale-110 transition-transform duration-300"
+              >
             </div>
           </div>
+
+          <!-- Controles -->
+          <div class="grid grid-cols-2 gap-4 mt-5 items-center">
+
+            <!-- D-pad -->
+            <div class="relative w-24 h-24">
+              <div class="absolute top-8 left-0 right-0 h-8 bg-gray-900 rounded-md"></div>
+              <div class="absolute left-8 top-0 bottom-0 w-8 bg-gray-900 rounded-md"></div>
+            </div>
+
+            <!-- Mini panel -->
+            <div class="space-y-2">
+              <div class="h-4 bg-blue-300 border-2 border-gray-900 rounded-full"></div>
+              <div class="h-4 bg-green-300 border-2 border-gray-900 rounded-full"></div>
+              <div class="h-4 bg-yellow-300 border-2 border-gray-900 rounded-full"></div>
+            </div>
+          </div>
+
+          <!-- Pantalla inferior -->
+          <div class="mt-5 bg-gray-900 border-4 border-red-900 rounded-2xl px-4 py-3 font-mono text-green-400 text-sm">
+            <p id="scanStatus">Analizando Pokemon...</p>
+          </div>
+
         </div>
       </div>
     </div>
@@ -161,29 +213,57 @@
 
   <!-- PROBLEMA -->
   <section class="bg-pokedark py-20">
-    <div class="max-w-5xl mx-auto px-6 text-center">
-      <h2 class="text-3xl md:text-4xl font-black text-white mb-4">
-        ¿Le pasa esto a tu hijo/a?
-      </h2>
-      <p class="text-blue-200 mb-12 text-lg">Los problemas más comunes al aprender Pokémon solos</p>
-      <div class="grid md:grid-cols-3 gap-6">
-        <div class="bg-white/10 rounded-2xl p-6 text-left border border-white/20">
-          <div class="text-4xl mb-4">😓</div>
-          <h3 class="font-black text-white text-lg mb-2">Recursos en inglés</h3>
-          <p class="text-blue-200 text-sm leading-relaxed">La mayoría de guías y wikis están en inglés, lo que hace imposible que niños pequeños puedan aprender solos.</p>
-        </div>
-        <div class="bg-white/10 rounded-2xl p-6 text-left border border-white/20">
-          <div class="text-4xl mb-4">📚</div>
-          <h3 class="font-black text-white text-lg mb-2">Demasiada información</h3>
-          <p class="text-blue-200 text-sm leading-relaxed">Hay más de 900 Pokémon y 18 tipos. Los niños se abruman y pierden el interés antes de entender lo básico.</p>
-        </div>
-        <div class="bg-white/10 rounded-2xl p-6 text-left border border-white/20">
-          <div class="text-4xl mb-4">🎯</div>
-          <h3 class="font-black text-white text-lg mb-2">Sin estrategia</h3>
-          <p class="text-blue-200 text-sm leading-relaxed">Los niños juegan sin entender por qué pierden. Sin aprender la lógica de tipos, el juego se vuelve frustrante.</p>
-        </div>
+    <div id="pokemon" class="max-w-5xl mx-auto px-6 text-center">
+
+      <div class="flex justify-center gap-2">
+        <svg width="36" height="36" viewBox="0 0 36 36"
+          fill="none" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="18" cy="18" r="17" fill="white" stroke="#000" stroke-width="2"/>
+          <path d="M1 18 Q18 18 35 18" stroke="#000" stroke-width="2"/>
+          <path d="M1 18 A17 17 0 0 1 35 18" fill="#EF4444"/>
+          <circle cx="18" cy="18" r="5" fill="white" stroke="#000" stroke-width="2"/>
+          <circle cx="18" cy="18" r="2.5" fill="#fff" stroke="#000" stroke-width="1.5"/>
+        </svg>
+        <input type="text" id="search" placeholder="Ingresa el pokemon que deseas buscar"
+        class="border-2 rounded-md w-80">
       </div>
-    </div>
+
+      <div id="contenedor-pokemon">
+
+        <h2 id="nombre-pokemon" class="text-red-500">Pikachu</h2>
+
+        <img id="img-pokemon">
+
+        <div id="stats-pokemon">
+
+        </div>
+
+        <div id="Evoluciones">
+          <div id="tarjeta-evolucion">
+
+          </div>
+
+        </div>
+
+        </div id="crianza">
+
+          <div id="tipo-huevo">
+
+          </div>
+
+          <div id="duracion-crianza">
+
+          </div>
+
+        </div>
+
+        <div id="habilidades">
+
+          <div id="habilidad-tarjeta"></div>
+
+        </div>
+
+      </div>
   </section>
 
   <!-- CÓMO FUNCIONA -->
@@ -297,57 +377,6 @@
     </div>
   </section>
 
-  <!-- TESTIMONIOS -->
-  <section id="testimonios" class="py-24 bg-yellow-50">
-    <div class="max-w-5xl mx-auto px-6">
-      <div class="text-center mb-16">
-        <span class="text-pokered font-black text-sm uppercase tracking-widest">Testimonios</span>
-        <h2 class="text-4xl font-black mt-2">Lo que dicen nuestros entrenadores</h2>
-      </div>
-      <div class="grid md:grid-cols-3 gap-6">
-        <div class="bg-white rounded-3xl p-6 shadow-sm card-hover">
-          <div class="flex items-center gap-1 text-yellow-400 mb-4">
-            ★★★★★
-          </div>
-          <p class="text-gray-600 text-sm leading-relaxed mb-4">"Mi hijo de 8 años por fin entiende por qué pierde contra ciertos Pokémon. ¡Ahora me gana a mí en los duelos!"</p>
-          <div class="flex items-center gap-3">
-            <div class="w-10 h-10 bg-pink-200 rounded-full flex items-center justify-center text-lg">👩</div>
-            <div>
-              <p class="font-bold text-sm">María González</p>
-              <p class="text-xs text-gray-400">Mamá de Sebastián, 8 años</p>
-            </div>
-          </div>
-        </div>
-        <div class="bg-white rounded-3xl p-6 shadow-sm card-hover">
-          <div class="flex items-center gap-1 text-yellow-400 mb-4">
-            ★★★★★
-          </div>
-          <p class="text-gray-600 text-sm leading-relaxed mb-4">"Lo uso en mi clase de 5to grado para enseñar lógica y estrategia. Los niños participan con una energía increíble."</p>
-          <div class="flex items-center gap-3">
-            <div class="w-10 h-10 bg-blue-200 rounded-full flex items-center justify-center text-lg">👨</div>
-            <div>
-              <p class="font-bold text-sm">Prof. Carlos Mendoza</p>
-              <p class="text-xs text-gray-400">Docente de primaria</p>
-            </div>
-          </div>
-        </div>
-        <div class="bg-white rounded-3xl p-6 shadow-sm card-hover">
-          <div class="flex items-center gap-1 text-yellow-400 mb-4">
-            ★★★★★
-          </div>
-          <p class="text-gray-600 text-sm leading-relaxed mb-4">"¡Al fin una app en español! Mi hija no hablaba inglés y sentía que Pokémon 'no era para ella'. Ahora es la experta de su clase."</p>
-          <div class="flex items-center gap-3">
-            <div class="w-10 h-10 bg-green-200 rounded-full flex items-center justify-center text-lg">👩</div>
-            <div>
-              <p class="font-bold text-sm">Ana Ríos</p>
-              <p class="text-xs text-gray-400">Mamá de Valentina, 11 años</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
   <!-- CTA / REGISTRO -->
   <section id="registro" class="py-24 bg-gradient-to-br from-pokered to-red-700 relative overflow-hidden">
     <div class="absolute inset-0 opacity-10">
@@ -402,9 +431,8 @@
           <a href="#" class="hover:text-white transition-colors">Inicio</a>
           <a href="#como-funciona" class="hover:text-white transition-colors">¿Cómo funciona?</a>
           <a href="#tipos" class="hover:text-white transition-colors">Tipos</a>
-          <a href="#testimonios" class="hover:text-white transition-colors">Testimonios</a>
         </nav>
-        <p class="text-blue-400 text-xs">© 2026 PokeAprender. Hecho con ❤️ para niños.</p>
+        <p class="text-blue-400 text-xs">© 2026 PokeAprender.</p>
       </div>
       <div class="mt-6 pt-6 border-t border-white/10 text-center">
         <p class="text-blue-400 text-xs">Pokémon es marca registrada de Nintendo/Game Freak. PokeAprender es un proyecto educativo independiente sin fines de lucro.</p>
