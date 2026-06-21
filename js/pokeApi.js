@@ -12,7 +12,6 @@ const fetchJson = async (url) => {
 
 const getPokemonByName = async (name) => {
     const pokemonName = name.toLowerCase().trim();
-
     return await fetchJson(`${BASE_URL}/pokemon/${pokemonName}`);
 };
 
@@ -24,8 +23,13 @@ const getEvolutionChainByUrl = async (url) => {
     return await fetchJson(url);
 };
 
+const getPokemonTypeByName = async (typeName) => {
+    return await fetchJson(`${BASE_URL}/type/${typeName}`);
+};
+
 export {
     getPokemonByName,
     getPokemonSpeciesByUrl,
-    getEvolutionChainByUrl
+    getEvolutionChainByUrl,
+    getPokemonTypeByName
 };

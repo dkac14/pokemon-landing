@@ -1,30 +1,40 @@
 import { getPokemonFullData } from "./pokemonService.js";
 import { renderPokemon } from "./renderPokemon.js";
+import { enableTypeButtons } from "./typeRelations.js";
+import { enablePokemonQuiz } from "./quizPokemon.js";
 
 const enablePokemonSearch = () => {
-  const search = document.getElementById("search");
+    const search = document.getElementById("search");
 
-  search.addEventListener("keydown", async (event) => {
-    if (event.key !== "Enter") return;
-
-    const pokemonName = search.value;
-
-    if (pokemonName.trim() === "") {
-      console.log("Escribe el nombre de un Pokémon");
-      return;
+    if (!search) {
+        return;
     }
 
-    const pokemon = await getPokemonFullData(pokemonName);
+    search.addEventListener("keydown", async (event) => {
+        if (event.key !== "Enter") {
+            return;
+        }
 
-    if (pokemon === null) {
-      console.log("Pokémon no encontrado");
-      return;
-    }
+        const pokemonName = search.value.trim();
 
-    renderPokemon(pokemon);
-  });
+        if (pokemonName === "") {
+            console.log("Escribe el nombre de un Pokémon");
+            return;
+        }
+
+        const pokemon = await getPokemonFullData(pokemonName);
+
+        if (pokemon === null) {
+            console.log("Pokémon no encontrado");
+            return;
+        }
+
+        renderPokemon(pokemon);
+    });
 };
 
-(() => {
-  enablePokemonSearch();
-})();
+document.addEventListener("DOMContentLoaded", () => {
+    enablePokemonSearch();
+    enableTypeButtons();
+    enablePokemonQuiz();
+});
