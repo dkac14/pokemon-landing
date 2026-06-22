@@ -2,6 +2,7 @@ import { getPokemonFullData } from "./pokemonService.js";
 import { renderPokemon } from "./renderPokemon.js";
 import { enableTypeButtons } from "./typeRelations.js";
 import { enablePokemonQuiz } from "./quizPokemon.js";
+import { enableRegisterForm } from "./registerForm.js";
 
 const enablePokemonSearch = () => {
     const search = document.getElementById("search");
@@ -37,4 +38,5 @@ document.addEventListener("DOMContentLoaded", () => {
     enablePokemonSearch();
     enableTypeButtons();
     enablePokemonQuiz();
+    enableRegisterForm();
 });
